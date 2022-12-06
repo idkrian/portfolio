@@ -9,6 +9,7 @@ export default function ContactForm() {
         <div className="contactContainer">
             <div
                 data-aos="fade-right"
+                data-aos-duration="2000"
                 style={{
                     height: '80%',
                 }}>
@@ -50,6 +51,7 @@ export default function ContactForm() {
             </div>
             <div
                 data-aos="fade-left"
+                data-aos-duration="2000"
                 style={{
                     height: '80%',
                     margin: '2em',
