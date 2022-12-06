@@ -1,0 +1,31 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    .homeName{
+        font-size: 5em;
+    }
+}
+
+.custom-shape-divider-bottom-1670261602 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1670261602 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 115px;
+}
+
+.custom-shape-divider-bottom-1670261602 .shape-fill {
+    fill: #cacaca;
+}
