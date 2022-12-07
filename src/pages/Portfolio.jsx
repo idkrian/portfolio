@@ -11,24 +11,12 @@ export default function Portfolio() {
     return (
         <>
             <div className='portfolioContainer'>
-                <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    alignContent: 'center',
-                    flexDirection: 'column',
-                    margin: '2em'
-                }}>
+                <div className='portfolioTitle'>
                     <p className='title'>My Portfolio</p>
                     <p className='subtitle'>I love what I do. I take great pride in what I do.</p>
                 </div>
                 <div
-                    style={{
-                        display: 'flex',
-                        flexWrap: 'wrap',
-                        width: '80%',
-                        justifyContent: 'center'
-                    }}
+                    className='portfolioCards'
                     data-aos="fade-up"
                     data-aos-duration="2000"
                 >

@@ -10,9 +10,7 @@ export default function ContactForm() {
             <div
                 data-aos="fade-right"
                 data-aos-duration="2000"
-                style={{
-                    height: '80%',
-                }}>
+                style={{ height: '80%' }}>
                 <h1>Contact Info</h1>
                 <div>
                     <div className='infoDiv'>
@@ -52,22 +50,14 @@ export default function ContactForm() {
             <div
                 data-aos="fade-left"
                 data-aos-duration="2000"
-                style={{
-                    height: '80%',
-                    margin: '2em',
-                    maxWidth: '650px'
-                }}>
+                style={{ height: '80%', margin: '2em', maxWidth: '650px' }}>
                 <h1>Contact Form</h1>
                 <form style={{
                     display: 'flex',
                     flexDirection: 'column'
                 }} action="">
                     <div>
-                        <div style={{
-                            display: 'flex',
-                            flexWrap: 'wrap',
-                            justifyContent: 'space-between'
-                        }}>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
                             <input className='inputText' type="text" />
                             <input className='inputText' type="text" />
                             <input className='inputText' type="text" />

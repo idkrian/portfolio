@@ -10,14 +10,7 @@ export default function AboutMe() {
         <>
             <div className="aboutMeContainer">
                 <div
-                    style={{
-                        maxWidth: '700px',
-                        maxWidth: '700px',
-                        display: 'flex',
-                        flexWrap: 'wrap',
-                        flexDirection: 'column',
-                        padding: '1em',
-                    }}
+                    className='aboutMeTextDiv'
                     data-aos="fade-up"
                     data-aos-duration="2000"
                 >
@@ -54,7 +47,7 @@ export default function AboutMe() {
                     data-aos="fade-up"
                     data-aos-duration="2000"
                 >
-                    <img src={img} style={{ width: '300px' }} />
+                    <img src={img} style={{ width: '18em' }} />
                 </div>
             </div>
         </>

@@ -1,5 +1,3 @@
-import { useState, useRef } from 'react'
-import './App.scss'
 import HomeBar from './pages/HomeBar'
 import AboutMe from './pages/AboutMe'
 import ContactForm from './pages/ContactForm'
