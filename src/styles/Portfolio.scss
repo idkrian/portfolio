@@ -1,0 +1,11 @@
+.portfolioContainer{
+    display: flex;
+    height: 100%;
+    background-color: rgb(235, 235, 235);
+    align-items: center;
+    flex-direction: column;
+    padding: 5em 0;
+    .title{
+        font-size: 2.5em;
+    }
+}

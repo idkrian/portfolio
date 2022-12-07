@@ -1,11 +1,11 @@
 .aboutMeContainer{
-    height: 60vh;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
-    // padding: 2em 25em;
     flex-wrap: wrap;
+    margin: 5em 0;
 }
 
 .cvButton{
@@ -15,7 +15,7 @@
     width: 8em;
     height: 2.6em;
     line-height: 2.5em;
-    margin: 20px;
+    margin: 0 1em;
     position: relative;
     overflow: hidden;
     border: 2px solid var(--color);
@@ -64,7 +64,6 @@
 
 
    .gitButton{
-    // --color: #560bad;
     --color: #fff;
     font-family: inherit;
     display: inline-block;
@@ -112,3 +111,23 @@
     background: #fff;
     transition: background 0s;
    }
+  
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  
+  .imageDiv{
+    margin: 4em;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  

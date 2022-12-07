@@ -78,7 +78,9 @@ export default function ContactForm() {
                         </div>
                     </div>
                 </form>
-                <button class="submitButton">Enviar Mensagem</button>
+                <div style={{ marginTop: '1em' }}>
+                    <button class="submitButton">Enviar Mensagem</button>
+                </div>
             </div>
         </div >
     )

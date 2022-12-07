@@ -10,12 +10,19 @@ export default function AboutMe() {
         <>
             <div className="aboutMeContainer">
                 <div
-                    style={{ minWidth: '400px', maxWidth: '700px' }}
+                    style={{
+                        maxWidth: '700px',
+                        maxWidth: '700px',
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        flexDirection: 'column',
+                        padding: '1em',
+                    }}
                     data-aos="fade-up"
-                    data-aos-duration="3000"
+                    data-aos-duration="2000"
                 >
-                    <h1>About Me</h1>
-                    <h4 style={{ color: 'gray', margin: '1em 0' }}>Full Stack Developer</h4>
+                    <h1 style={{ fontSize: '2.5em' }}>About Me</h1>
+                    <h4 style={{ color: 'gray', margin: '1em 0', fontSize: '1.2em' }}>Full Stack Developer</h4>
                     <p>
                         Desenvolvedor de Software Full Stack Júnior, com experiência de atuação em grandes projetos de empresas nacionais e multinacionais.
                         <br />
@@ -37,13 +44,15 @@ export default function AboutMe() {
                         Me considero uma pessoa muito acessiva e extrovertida, sempre ajudando no entrosamento e na comunicação das equipes em que trabalhei,
                         também me considero ágil e consistente em aprender uma nova tecnologia e alta adaptabilidade às mudanças, pronto para superar qualquer desafio!
                     </p>
-                    <button class="gitButton">GitHub</button>
-                    <button class="cvButton">Currículo</button>
+                    <div style={{ marginTop: '1em' }} >
+                        <button class="gitButton">GitHub</button>
+                        <button class="cvButton">Currículo</button>
+                    </div>
                 </div>
                 <div
-                    style={{ margin: '4em' }}
+                    className='imageDiv'
                     data-aos="fade-up"
-                    data-aos-duration="3000"
+                    data-aos-duration="2000"
                 >
                     <img src={img} style={{ width: '300px' }} />
                 </div>
