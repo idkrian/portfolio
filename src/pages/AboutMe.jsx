@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/AboutMe.scss'
 import img from '../assets/pixelart.png'
+import Resume from '../assets/CurriculoRian.pdf'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
@@ -37,9 +38,13 @@ export default function AboutMe() {
                         Me considero uma pessoa muito acessiva e extrovertida, sempre ajudando no entrosamento e na comunicação das equipes em que trabalhei,
                         também me considero ágil e consistente em aprender uma nova tecnologia e alta adaptabilidade às mudanças, pronto para superar qualquer desafio!
                     </p>
-                    <div style={{ marginTop: '1em' }} >
-                        <button class="gitButton">GitHub</button>
-                        <button class="cvButton">Currículo</button>
+                    <div style={{ marginTop: '1em' }}>
+                        <a href="https://github.com/idkrian" target="_blank">
+                            <button class="gitButton">GitHub</button>
+                        </a>
+                        <a href={Resume} download="Rian Curriculum.pdf">
+                            <button class="cvButton">Currículo</button>
+                        </a>
                     </div>
                 </div>
                 <div
