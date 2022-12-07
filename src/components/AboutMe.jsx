@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/AboutMe.scss'
-import img from '../assets/topera.png'
+import img from '../assets/pixelart.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
@@ -9,24 +9,43 @@ export default function AboutMe() {
     return (
         <>
             <div className="aboutMeContainer">
-                <div data-aos="fade-up"
-                    data-aos-duration="3000">
+                <div
+                    style={{ minWidth: '400px', maxWidth: '700px' }}
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                >
                     <h1>About Me</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Tincidunt arcu non sodales
-                        neque. Viverra orci sagittis eu volutpat odio. Nequ
-                        {/* e ornare aenean euismod elementum nisi. Diam phasel
-                        lus vestibulum lorem sed risus. Sapien et ligula ul
-                        lamcorper malesuada proin libero nunc consequat. Id
-                        venenatis a condimentum vitae sapien. Auctor augu
-                        e mauris augue neque. Eget dolor morbi non arcu r
-                        isus. */}
+                    <h4 style={{ color: 'gray', margin: '1em 0' }}>Full Stack Developer</h4>
+                    <p>
+                        Desenvolvedor de Software Full Stack Júnior, com experiência de atuação em grandes projetos de empresas nacionais e multinacionais.
+                        <br />
+                        <br />
+
+                        Possuo foco em desenvolvimento com a linguagem Javascript, utilizando as stacks:
+                        <br />
+                        Front End: ReactJS, VueJS , React Native e consumo de APIs;
+                        <br />
+                        Back End: NodeJS, Express, NestJS e construção de APIs;
+                        <br />
+                        Databases: MySQL, PostgreSQL e MongoDB.
+                        <br />
+                        <br />
+
+                        Também possuo nível avançado em inglês, possibilitando a comunicação em ambas as línguas.
+                        <br />
+
+                        Me considero uma pessoa muito acessiva e extrovertida, sempre ajudando no entrosamento e na comunicação das equipes em que trabalhei,
+                        também me considero ágil e consistente em aprender uma nova tecnologia e alta adaptabilidade às mudanças, pronto para superar qualquer desafio!
                     </p>
+                    <button class="gitButton">GitHub</button>
+                    <button class="cvButton">Currículo</button>
                 </div>
-                <div data-aos="fade-up"
-                    data-aos-duration="3000">
-                    <img src={img} style={{ width: '400px' }} />
+                <div
+                    style={{ margin: '4em' }}
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                >
+                    <img src={img} style={{ width: '300px' }} />
                 </div>
             </div>
         </>

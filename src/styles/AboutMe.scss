@@ -3,6 +3,112 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #cacaca;
-    padding: 2em 25em;
+    background-color: white;
+    // padding: 2em 25em;
+    flex-wrap: wrap;
 }
+
+.cvButton{
+    --color: #560bad;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 3px;
+    font-weight: 500;
+    color: var(--color);
+    background-color: white;
+
+   }
+   
+   .cvButton:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   .cvButton:hover {
+    color: #fff;
+   }
+   
+   .cvButton:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .cvButton:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .cvButton:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }
+
+
+
+
+
+   .gitButton{
+    // --color: #560bad;
+    --color: #fff;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #560bad;
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 3px;
+    font-weight: 500;
+    color: var(--color);
+    background-color: #560bad;
+   }
+   
+   .gitButton:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   .gitButton:hover {
+    color: #560bad;
+   }
+   
+   .gitButton:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .gitButton:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .gitButton:active:before {
+    background: #fff;
+    transition: background 0s;
+   }
