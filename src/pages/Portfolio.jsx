@@ -4,6 +4,8 @@ import CardInput from '../components/CardInput'
 import StatsfyImage from '../assets/statsfy.png'
 import PokedexImage from '../assets/pokedex.png'
 import KlimaImage from '../assets/klima.png'
+import BurguerImage from '../assets/burguer.png'
+import CostsImage from '../assets/costs.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
@@ -41,6 +43,18 @@ export default function Portfolio() {
                         image={KlimaImage}
                         website='https://klima-app.netlify.app/'
                         github='https://github.com/idkrian/klima'
+                    />
+                    <CardInput
+                        description="App created to simulate the system of a restaurant."
+                        title="Burguer"
+                        image={BurguerImage}
+                        github='https://github.com/idkrian/burguer'
+                    />
+                    <CardInput
+                        description="App created to help project management."
+                        title="Costs"
+                        image={CostsImage}
+                        github='https://github.com/idkrian/costs'
                     />
                 </div>
             </div>
