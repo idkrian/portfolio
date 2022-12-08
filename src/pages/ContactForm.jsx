@@ -3,8 +3,26 @@ import '../styles/ContactForm.scss'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
-
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 export default function ContactForm() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            'service_pkfy5vc',
+            'template_vxit5xb',
+            form.current,
+            '7AzArv9-xnWfPh5nb')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
+
     return (
         <div className="contactContainer">
             <div
@@ -52,25 +70,57 @@ export default function ContactForm() {
                 data-aos-duration="2000"
                 style={{ height: '80%', margin: '2em', maxWidth: '650px' }}>
                 <h1>Contact Form</h1>
-                <form style={{
-                    display: 'flex',
-                    flexDirection: 'column'
-                }} action="">
+                <form
+                    style={{
+                        display: 'flex',
+                        flexDirection: 'column'
+                    }}
+                    ref={form} onSubmit={sendEmail}
+                >
                     <div>
                         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
-                            <input className='inputText' type="text" />
-                            <input className='inputText' type="text" />
-                            <input className='inputText' type="text" />
-                            <input className='inputText' type="text" />
+                            <input
+                                placeholder='Your Name*'
+                                className='inputText'
+                                type="text"
+                                name='name'
+                                required
+                            />
+                            <input
+                                placeholder='Your Email*'
+                                className='inputText'
+                                type="text"
+                                name='email'
+                                required
+                            />
+                            <input
+                                placeholder='Subject*'
+                                className='inputText'
+                                type="text"
+                                name='subject'
+                                required
+                            />
+                            <input
+                                placeholder='Phone'
+                                className='inputText'
+                                type="text"
+                                name='phone'
+                            />
                         </div>
-                        <div className=''>
-                            <input className='inputMessage' type="text" name="" id="" />
+                        <div>
+                            <input
+                                placeholder='Your Message*'
+                                className='inputMessage'
+                                type="text"
+                                name='message'
+                                required
+                            />
                         </div>
                     </div>
+                    <div style={{ marginTop: '1em' }}>
+                        <button type='submit' class="submitButton">Send Message</button>
+                    </div>
                 </form>
-                <div style={{ marginTop: '1em' }}>
-                    <button class="submitButton">Enviar Mensagem</button>
-                </div>
             </div>
         </div >
     )
