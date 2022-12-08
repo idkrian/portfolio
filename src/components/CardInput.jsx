@@ -16,11 +16,12 @@ export default function CardInput(props) {
         <Text>{props.description}</Text>
       </CardBody>
       <CardFooter>
-        <button className="gitButton">GitHub</button>
-        <button tyle={{ marginLeft: '1em' }} className="cvButton">Resume</button>
-
-        {/* <Button>WebSite</Button>
-        <Button style={{ marginLeft: '1em' }}>GitHub</Button> */}
+        <a href={props.github} target="_blank">
+          <button className="gitButton">GitHub</button>
+        </a>
+        <a href={props.website} target="_blank">
+          <button tyle={{ marginLeft: '1em' }} className="cvButton">Website</button>
+        </a>
       </CardFooter>
     </Card >
   )

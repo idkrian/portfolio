@@ -25,16 +25,22 @@ export default function Portfolio() {
                         description="App that brings information and data from your profile on Spotify."
                         title="Statsfy"
                         image={StatsfyImage}
+                        website='https://statsfy.netlify.app/'
+                        github='https://github.com/idkrian/statsfy'
                     />
                     <CardInput
                         description="App that simulates a pokédex, to search for information about pokemons."
                         title="Pokedex"
                         image={PokedexImage}
+                        website='https://rianpokedex.netlify.app/'
+                        github='https://github.com/idkrian/pokedex'
                     />
                     <CardInput
                         description="App that brings the current temperature of a given city."
                         title="Klima"
                         image={KlimaImage}
+                        website='https://klima-app.netlify.app/'
+                        github='https://github.com/idkrian/klima'
                     />
                 </div>
             </div>
