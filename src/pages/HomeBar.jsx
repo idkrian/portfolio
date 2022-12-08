@@ -9,8 +9,8 @@ export default function HomeBar() {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ["Especializado em React", "Especializado em .NET",
-                "Especializado em NodeJS", "Especializado em VueJS"],
+            strings: ["Specialized in React", "Specialized in Databases",
+                "Specialized in NodeJS", "Specialized in VueJS"],
             startDelay: 100,
             typeSpeed: 80,
             backSpeed: 80,
@@ -33,8 +33,8 @@ export default function HomeBar() {
 
             <div className='nameContainer'>
                 <h1 className="homeName">I'm Rian</h1>
-                <p style={{ color: 'white', letterSpacing: '5px', fontSize: '1.2em' }}
-                >Developer located in Brasília</p>
+                <p style={{ color: 'white', letterSpacing: '5px', fontSize: '1.5em' }}
+                >Full Stack Developer</p>
                 <div style={{ display: 'flex' }}>
                     <h4 ref={el}></h4>
                     <p ref={el}

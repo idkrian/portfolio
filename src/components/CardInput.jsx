@@ -13,11 +13,11 @@ export default function CardInput(props) {
         <Heading size='md'>{props.title}</Heading>
       </CardHeader>
       <CardBody size="md">
-        <Text>View a summary of all your customers over the last month.</Text>
+        <Text>{props.description}</Text>
       </CardBody>
       <CardFooter>
         <button className="gitButton">GitHub</button>
-        <button tyle={{ marginLeft: '1em' }} className="cvButton">Currículo</button>
+        <button tyle={{ marginLeft: '1em' }} className="cvButton">Resume</button>
 
         {/* <Button>WebSite</Button>
         <Button style={{ marginLeft: '1em' }}>GitHub</Button> */}

@@ -3,6 +3,7 @@ import '../styles/Portfolio.scss'
 import CardInput from '../components/CardInput'
 import StatsfyImage from '../assets/statsfy.png'
 import PokedexImage from '../assets/pokedex.png'
+import KlimaImage from '../assets/klima.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
@@ -20,11 +21,21 @@ export default function Portfolio() {
                     data-aos="fade-up"
                     data-aos-duration="2000"
                 >
-                    <CardInput title="Statsfy" image={StatsfyImage} />
-                    <CardInput title="Pokedex" image={PokedexImage} />
-                    <CardInput title="Klima" image={PokedexImage} />
-                    <CardInput title="Klima" image={PokedexImage} />
-                    <CardInput title="Klima" image={PokedexImage} />
+                    <CardInput
+                        description="App that brings information and data from your profile on Spotify."
+                        title="Statsfy"
+                        image={StatsfyImage}
+                    />
+                    <CardInput
+                        description="App that simulates a pokédex, to search for information about pokemons."
+                        title="Pokedex"
+                        image={PokedexImage}
+                    />
+                    <CardInput
+                        description="App that brings the current temperature of a given city."
+                        title="Klima"
+                        image={KlimaImage}
+                    />
                 </div>
             </div>
         </>
