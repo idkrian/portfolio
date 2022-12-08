@@ -16,12 +16,21 @@ export default function CardInput(props) {
         <Text>{props.description}</Text>
       </CardBody>
       <CardFooter>
-        <a href={props.github} target="_blank">
-          <button className="gitButton">GitHub</button>
-        </a>
-        <a href={props.website} target="_blank">
-          <button tyle={{ marginLeft: '1em' }} className="cvButton">Website</button>
-        </a>
+        {props.website == undefined ? (
+          <a href={props.github} target="_blank">
+            <button className="gitButton">GitHub</button>
+          </a>
+        ) : (
+          <>
+            <a href={props.github} target="_blank">
+              <button className="gitButton">GitHub</button>
+            </a>
+            <a href={props.website} target="_blank">
+              <button tyle={{ marginLeft: '1em' }} className="cvButton">Website</button>
+            </a>
+          </>
+        )
+        }
       </CardFooter>
     </Card >
   )
