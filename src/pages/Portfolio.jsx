@@ -42,7 +42,7 @@ export default function Portfolio() {
                   description="Uma pokedéx... pois é todo mundo já fez kkkkk."
                   title="Pokedex"
                   image={PokedexImage}
-                  website="https://rianpokedex.netlify.app/"
+                  website="https://pokedexriandev.netlify.app/"
                   github="https://github.com/idkrian/pokedex"
                 />
                 <CardInput
