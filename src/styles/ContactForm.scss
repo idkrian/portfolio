@@ -1,0 +1,89 @@
+.contactContainer{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 2em 5em;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+.inputText{
+    all: unset;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cacaca;
+    height: 2.2em;
+    width: 300px;
+    margin: 1em 0;
+    padding: 0.5em;
+}
+.inputMessage{
+    // all: unset;
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cacaca;
+    height: 10em;
+    width: 100%;
+    padding: 0.5em;
+}
+   
+   .submitButton{
+    --color: #fff;
+    font-family: inherit;
+    display: inline-block;
+    width: 12em;
+    height: 2.6em;
+    line-height: 2.5em;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #560bad;
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 3px;
+    font-weight: 500;
+    color: var(--color);
+    background-color: #560bad;
+   }
+   
+   .submitButton:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 15em;
+    width: 25em;
+    border-radius: 50%;
+   }
+   
+   .submitButton:hover {
+    color: #560bad;
+   }
+   
+   .submitButton:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .submitButton:hover:before {
+    top: -40px;
+    left: -60px;
+   }
+   
+   .submitButton:active:before {
+    background: #fff;
+    transition: background 0s;
+   }
+
+
+
+   .infoDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2em;
+   }

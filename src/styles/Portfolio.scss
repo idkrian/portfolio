@@ -1,0 +1,32 @@
+.portfolioContainer{
+    display: flex;
+    height: 100%;
+    background-color: rgb(235, 235, 235);
+    align-items: center;
+    flex-direction: column;
+    padding: 5em 0;
+    .title{
+        font-size: 2.5em;
+    }
+}
+
+.portfolioTitle{
+    display: flex;
+    align-items: center;
+    place-content: center;
+    flex-direction: column;
+    margin: 2em;
+}
+.portfolioCards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+}    
+.tabPanelDiv{
+    display: flex;
+    width: 1090px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+}
